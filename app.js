@@ -1,3 +1,8 @@
+//
+//Author: Remmie Ajayi
+//
+
+//Declaring of  variables
 var numOfSquares = 6;
 var colors = generateRandomColors(numOfSquares);
 var	squares = document.querySelectorAll(".square");
@@ -10,6 +15,7 @@ var easyBtn = document.querySelector("#easyBtn")
 var hardBtn = document.querySelector("#hardBtn")
 
 
+//Easy Game mode button
 easyBtn.addEventListener("click", function(){
 	hardBtn.classList.remove("selected");
 	easyBtn.classList.add("selected");
@@ -28,6 +34,8 @@ easyBtn.addEventListener("click", function(){
 	}
 })
 
+
+//Hard Game mode button
 hardBtn.addEventListener("click", function(){
 	hardBtn.classList.add("selected");
 	easyBtn.classList.remove("selected");
@@ -44,7 +52,7 @@ hardBtn.addEventListener("click", function(){
 })
 
 
-
+//Reset Button
 //Resets the game and generate new colors
 resetButton.addEventListener("click", function(){
 	//Generate all new colors
